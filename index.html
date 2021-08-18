@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Matcher</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="w-full h-screen grid grid-cols-2 gap-4 p-16">
+        <div class="h-5/6 bg-gray-700 p-4 rounded shadow-xl">
+            <input type="text" class="block rounded-full shadow-lg w-full p-2" id="displayPin">
+            <button class="bg-gray-600 p-8 text-white text-3xl font-bold block rounded-full mt-28 ml-36 shadow-xl" id="pinGenerate">Generate Pin</button>
+        </div>
+        <div class="h-5/6 bg-gray-700 p-4 rounded shadow-xl">
+            <input type="text" class="block rounded-full shadow-lg w-full p-2" id="showPin">
+            <div id="keyPad" class="grid grid-cols-3 gap-4 p-8">
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">1</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">2</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">3</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">4</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">5</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">6</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">7</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">8</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">9</button>
+                <button class="btn bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold">0</button>
+                <button class="bg-gray-600 p-4 rounded-full shadow-lg text-white font-bold" id="clear">C</button>
+                <button class="bg-gray-600 p-4 text-white text-3xl font-bold block rounded-full shadow-xl" id="submit">Submit</button>
+            </div>
+        </div>
+    </section>
+    <h1 class="text-center text-4xl font-bold p-4 bg-gray-700 text-white hidden" id="match">Pin Matched</h1>
+    <h1 class="text-center text-4xl font-bold p-4 bg-gray-700 text-white hidden" id="not">Pin Not Matched</h1>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
